@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/https://it2021db.github.io/todos_list-react/static/css/main.8fe81dda.css",
-    "main.js": "/https://it2021db.github.io/todos_list-react/static/js/main.c61a8794.js",
-    "static/js/787.ad202182.chunk.js": "/https://it2021db.github.io/todos_list-react/static/js/787.ad202182.chunk.js",
-    "index.html": "/https://it2021db.github.io/todos_list-react/index.html",
-    "main.8fe81dda.css.map": "/https://it2021db.github.io/todos_list-react/static/css/main.8fe81dda.css.map",
-    "main.c61a8794.js.map": "/https://it2021db.github.io/todos_list-react/static/js/main.c61a8794.js.map",
-    "787.ad202182.chunk.js.map": "/https://it2021db.github.io/todos_list-react/static/js/787.ad202182.chunk.js.map"
+    "main.css": "/todos_list-react/static/css/main.8fe81dda.css",
+    "main.js": "/todos_list-react/static/js/main.5e68797b.js",
+    "static/js/787.ad202182.chunk.js": "/todos_list-react/static/js/787.ad202182.chunk.js",
+    "index.html": "/todos_list-react/index.html",
+    "main.8fe81dda.css.map": "/todos_list-react/static/css/main.8fe81dda.css.map",
+    "main.5e68797b.js.map": "/todos_list-react/static/js/main.5e68797b.js.map",
+    "787.ad202182.chunk.js.map": "/todos_list-react/static/js/787.ad202182.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fe81dda.css",
-    "static/js/main.c61a8794.js"
+    "static/js/main.5e68797b.js"
   ]
 }
