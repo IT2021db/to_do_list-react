@@ -2,7 +2,7 @@
   "name": "todos_list-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https:https://it2021db.github.io/todos_list-react/",
+  "homepage": "https://it2021db.github.io/todos_list-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
