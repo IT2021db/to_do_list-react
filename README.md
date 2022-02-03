@@ -5,13 +5,20 @@
 Description of the project:
 
 The project is a simple task list note, where you cam wright your tasks, sign as done or remove from the list.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## DEMO
+## Demo
 https://it2021db.github.io/todos_list-react/
 
+## Technologies used in project:
+* HTML
+* CSS
+* javascript
+* Convention BEM
+* Immutability
+* React
+* Create-React-App
+* Webpack
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
