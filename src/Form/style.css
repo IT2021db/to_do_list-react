@@ -2,11 +2,13 @@
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
+    padding: 20px;
   }
   
   @media (max-width: 767px) {
     .form {
       grid-template-columns: 1fr;
+      
     }
   }
   
@@ -32,3 +34,4 @@
   .form__button:active {
     background-color: hsl(180, 100%, 35%);
   }
+  
