@@ -37,7 +37,7 @@ function App() {
   };
 
   const addNewTask = (content) => {
-    setTasks(tasks = [
+    setTasks(tasks => [
       ...tasks,
       {
         content: content,
