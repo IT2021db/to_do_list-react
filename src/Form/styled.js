@@ -13,24 +13,24 @@ export const StyledForm = styled.form`
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid ${({theme})=>theme.color.alto};
 `;
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: teal;
-    color: #fff;
+    background-color: ${({theme})=>theme.color.teal};;
+    color: ${({theme})=>theme.color.white};
     border: none;
     cursor: pointer;
 
     &:hover{
-         background-color: hsl(180, 100%, 30%);
+        filter: brightness(120%);
          transform: scale(1.1);
          transition: 1s;
     }
 
     &:active{
-         background-color: hsl(180, 100%, 35%);
+        filter: brightness(150%);
     }
 `;
 
