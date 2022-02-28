@@ -6,6 +6,8 @@ export const List = styled.ul`
     padding-right: 20px;
     padding-bottom: 20px;
     list-style: none;
+    word-break: break-all;
+  
 `;
 
 export const Item = styled.li`
