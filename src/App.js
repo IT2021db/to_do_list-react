@@ -5,7 +5,6 @@ import Tasks from './Tasks';
 import Section from './Section';
 import Header from './Header';
 import Container from './Container';
-import "./index.css";
 import { useTasks } from './useTasks';
 
 function App() {
