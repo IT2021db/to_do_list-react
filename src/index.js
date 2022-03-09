@@ -5,10 +5,50 @@ import { GlobalStyle } from "./GlobalStyle";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { theme } from "./theme";
+import { configureStore } from "@reduxjs/toolkit";
+
+const initialState = {
+  tasks: [],
+};
+
+const taskReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "addTask":
+      return {
+        ...state,
+        tasks: [
+          ...state.tasks,
+          {
+            content: action.payload,
+          },
+        ],
+      };
+    default: return state;
+  }
+};
+
+const addTask = content => ({
+  type: "addTask",
+  payload: content,
+});
+
+const selectTasks = ({ tasks }) => tasks;
+
+const store = configureStore({ reducer: taskReducer });
+console.log(selectTasks(store.getState()));
+
+store.dispatch(addTask("Nauczyć sie dispatch"));
+
+console.log(store.getState());
+
+store.dispatch(addTask("Zrobić zadanie 2"));
+
+console.log(store.getState());
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <GlobalStyle/>
+      <GlobalStyle />
       <App />
     </ThemeProvider>
   </React.StrictMode>,
