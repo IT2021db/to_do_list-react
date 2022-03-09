@@ -9,18 +9,16 @@ const tasksSlice = createSlice({
         addTask: ({ tasks }, { payload }) => {
             tasks.push(payload);
         },
+        toggleHideDone: (state)=>{
+            state.hideDone=!state.hideDone;
+        },
     },
 });
 
-export const { addTask } = tasksSlice.actions;
+export const { addTask, toggleHideDone } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;
 
-// console.log(addTask({
-//     content: "nauczyc sie lekcji o reduxie",
-//     done: false,
-// })
-// );
 
 console.log(tasksSlice.reducer({tasks:[]}, addTask({
     content: "test",
