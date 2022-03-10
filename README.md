@@ -6,7 +6,7 @@ Description of the project:
 
 The project is a simple task list note, where you cam wright your tasks, sign as done or remove from the list.
 ## Demo
-https://it2021db.github.io/todos_list-react/
+https://it2021db.github.io/todos-list-react/
 
 ## Technologies used in project:
 * HTML
