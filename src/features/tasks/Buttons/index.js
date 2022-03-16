@@ -7,28 +7,29 @@ import {
     setAllDone,
     fetchExampleTasks,
     selectIsEveryTaskDone,
-    selectAreTasksEmpty
+    selectAreTasksEmpty,
+    selectHideDone
 } from "../tasksSlice";
 
 const Button = () => {
-    const { tasks, hideDone } = useSelector(selectTasks);
-    
-    // const isEveryTaskDone=useSelector(selectIsEveryTaskDone);
-    // const areTasksEmpty=useSelector(selectAreTasksEmpty);
+    const tasks = useSelector(selectTasks);
+    const hideDone = useSelector(selectHideDone);
+    const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
+    const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const dispatch = useDispatch();
     return (
         <div>
             <Buttons onClick={() => dispatch(fetchExampleTasks())}>
                 Pobierz przykładowe zadania
             </Buttons>
-            {tasks.length > 0 && (
+            {!areTasksEmpty && (
                 <>
 
                     <Buttons onClick={() => dispatch(toggleHideDone())} >
                         {hideDone ? "Pokaż" : "Ukryj"} ukończone {console.log(hideDone)}
                     </Buttons>
                     <Buttons
-                        disabled={tasks.every(({ done }) => done)}
+                        disabled={isEveryTaskDone}
                         onClick={() => dispatch(setAllDone())}
                     >
                         Ukończ wszystkie

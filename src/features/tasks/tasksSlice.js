@@ -51,17 +51,15 @@ export const selectTasks = state => {
     console.log(state.tasks)
     console.log("console.log(state.tasks.tasks)-to tak:");
     console.log(state.tasks.tasks);
-    console.log("state.tasks.hideDone - to tak:");
-    console.log(state.tasks.hideDone);
-    return state.tasks;
+    return state.tasks.tasks;
 }
 
 export const selectHideDone = state => {
     console.log("console.log(state.hideDone)-to tak:");
-    console.log(state.hideDone);
-    return state.hideDone;
+    console.log(state.tasks.hideDone);
+    return state.tasks.hideDone;
 }
-export const selectIsEveryTaskDone = state => state.tasks.every(({ done }) => done);
+export const selectIsEveryTaskDone = state => state.tasks.tasks.every(({ done }) => done);
 export const selectAreTasksEmpty = state => state.tasks.tasks.length === 0;
 
 
