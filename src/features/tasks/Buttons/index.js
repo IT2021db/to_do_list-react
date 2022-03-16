@@ -12,6 +12,7 @@ import {
 
 const Button = () => {
     const { tasks, hideDone } = useSelector(selectTasks);
+    
     // const isEveryTaskDone=useSelector(selectIsEveryTaskDone);
     // const areTasksEmpty=useSelector(selectAreTasksEmpty);
     const dispatch = useDispatch();

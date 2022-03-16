@@ -1,17 +1,17 @@
-import { useState, useEffect} from "react";
+// import { useState, useEffect} from "react";
 
- export const useLocalStorageState = (keyName, initialValue) => {
-  const getInitialState = () => {
-    const localStorageCounter = localStorage.getItem(keyName, initialValue);
-    if (localStorageCounter === null) {
-      return initialValue;                             
-    }
-    return JSON.parse(localStorage.getItem(keyName))
-  };
-  const [state, setState] = useState(getInitialState); 
+//  export const useLocalStorageState = (keyName, initialValue) => {
+//   const getInitialState = () => {
+//     const localStorageCounter = localStorage.getItem(keyName, initialValue);
+//     if (localStorageCounter === null) {
+//       return initialValue;                             
+//     }
+//     return JSON.parse(localStorage.getItem(keyName))
+//   };
+//   const [state, setState] = useState(getInitialState); 
 
-  useEffect(() => {
-    localStorage.setItem(keyName, JSON.stringify(state))
-  }, [state]);
-  return [state, setState];
-};
+//   useEffect(() => {
+//     localStorage.setItem(keyName, JSON.stringify(state))
+//   }, [state]);
+//   return [state, setState];
+// };
