@@ -4,8 +4,8 @@ import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../task
 import { List, Item, Content, Button } from "./styled";
 
 const TasksList = () => {
-    const  tasks = useSelector(selectTasks);
-    const hideDone  = useSelector(selectHideDone);
+    const tasks = useSelector(selectTasks);
+    const hideDone = useSelector(selectHideDone);
     const dispatch = useDispatch();
     return (
         <List>

@@ -12,7 +12,6 @@ import {
 } from "../tasksSlice";
 
 const Button = () => {
-    const tasks = useSelector(selectTasks);
     const hideDone = useSelector(selectHideDone);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
