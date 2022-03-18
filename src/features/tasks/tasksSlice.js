@@ -44,7 +44,6 @@ const tasksSlice = createSlice({
 });
 
 export const {
-    tasks,
     addTask,
     toggleHideDone,
     toggleTaskDone,
@@ -59,7 +58,7 @@ const selectTasksState = state => state.tasks;
 export const selectTasks = state => {
     console.log("console.log(state.tasks)-to tak:");
     console.log(state.tasks)
-    console.log("loading= "+state.tasks.loading)
+    console.log("loading= " + state.tasks.loading)
     return selectTasksState(state).tasks;
 }
 
@@ -68,6 +67,9 @@ export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectIsEveryTaskDone = state => selectTasksState(state).tasks.every(({ done }) => done);
 export const selectAreTasksEmpty = state => selectTasksState(state).tasks.length === 0;
 export const selectLoading = state => selectTasksState(state).loading;
+
+export const getTaskById = (state, taskId) =>
+    selectTasks(state).find(({ id }) => id === taskId);
 
 
 
