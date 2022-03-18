@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../tasksSlice";
+import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../../tasksSlice";
 import { List, Item, Content, Button } from "./styled";
 
 const TasksList = () => {
@@ -20,7 +21,9 @@ const TasksList = () => {
                         {task.done ? "✓" : ""}
                     </Button>
                     <Content done={task.done}>
-                        {task.content}
+                        <Link to={`/zadania/${task.id}`}>
+                            {task.content}
+                        </Link>
                     </Content>
                     <Button remove
                         onClick={() => dispatch(removeTask(task.id))}
