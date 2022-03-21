@@ -26,8 +26,9 @@ https://it2021db.github.io/todos-list-react/
 - React
 - Create-React-App
 - React Hooks
-- working with API
-- Error Handling
+- NPM styled-components
+- open API -cooperating with
+- Error Handling /try-catch/
 - Promise / Async/ Await
 - Redux (Toolkit)
 - Redux-Saga
