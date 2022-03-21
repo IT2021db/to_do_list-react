@@ -1,6 +1,6 @@
 import react from "react";
 import { toAuthor, toTasks } from "../routes";
-import { StyledNavLink } from "../styled";
+import { StyledNavLink } from "./styled";
 
 export default () => {
     return (
