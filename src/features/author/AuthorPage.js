@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../../common/Section';
 import Header from '../../common/Header';
 import Container from '../../common/Container';
-import { ParagraphContent } from './styled';
+import { ParagraphStyled } from '../paragraphStyled.js';
 
 const AuthorPage = () => (
     <Container>
@@ -10,8 +10,8 @@ const AuthorPage = () => (
         <Section
             title="Dorota"
             body={
-                <><p>
-                    <ParagraphContent>
+                <><div>
+                    <ParagraphStyled>
                         <strong>Na codzień zajmuję się inżynierią elektroniczną.</strong> Praca tym zawodzie, jak i wielu podobnych, wymaga
                         intensywnego myślenia i skupienia uwagi przez wiele godzin
                         w ciągu dnia. Dlatego w takich wypadkach bardzo cenna jest <em>umiejętność dobrego wypoczywania</em> i
@@ -26,8 +26,8 @@ const AuthorPage = () => (
                         zioła ☘️
                         i jak
                         rozwijają swoje pąki kwiaty. 🌺
-                    </ParagraphContent>
-                </p>
+                    </ParagraphStyled>
+                </div>
                 </>
             }
         />

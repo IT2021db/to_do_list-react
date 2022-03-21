@@ -5,7 +5,7 @@ import Container from '../../../common/Container';
 import { useParams } from 'react-router-dom';
 import { getTaskById } from '../tasksSlice';
 import { useSelector } from "react-redux";
-import { ParagraphContent } from "../../author/styled"
+import { ParagraphStyled } from "../../paragraphStyled.js"
 
 function TaskPage() {
     const { id } = useParams();
@@ -17,10 +17,10 @@ function TaskPage() {
             <Section
                 title={task ? task.content : "Nie znaleziono zadania 😥 "}
                 body={task ?
-                    <> <ParagraphContent>
+                    <> <ParagraphStyled>
                         <strong>Ukończono: </strong>
                         {(task.done ? "Tak" : "Nie")}
-                    </ParagraphContent>
+                    </ParagraphStyled>
                     </>
                     : ""
                 }
