@@ -19,7 +19,7 @@ const Button = () => {
             {!areTasksEmpty && (
                 <>
                     <Buttons onClick={() => dispatch(toggleHideDone())} >
-                        {hideDone ? "Pokaż" : "Ukryj"} ukończone {console.log(hideDone)}
+                        {hideDone ? "Pokaż" : "Ukryj"} ukończone
                     </Buttons>
                     <Buttons
                         disabled={isEveryTaskDone}

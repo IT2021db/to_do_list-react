@@ -17,6 +17,5 @@ export const Header = styled.header`
         @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
             grid-template-columns: 1fr;
         }
-        
 `;
 

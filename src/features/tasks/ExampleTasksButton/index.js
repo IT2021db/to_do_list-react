@@ -13,8 +13,8 @@ export const ExampleTasksButton = () => {
                     onClick={() => dispatch(fetchExampleTasks())}
                     disabled={loading}
                 >
-                    {loading?"Ładowanie...":
-                    "Pobierz przykładowe zadania"}
+                    {loading ? "Ładowanie..." :
+                        "Pobierz przykładowe zadania"}
                 </Buttons>
             </>
         </div>
