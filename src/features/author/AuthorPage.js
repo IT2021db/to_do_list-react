@@ -8,7 +8,7 @@ const AuthorPage = () => (
     <Container>
         <Header title="O autorze" />
         <Section
-            title="Dorota"
+            title="Dorota Borowska"
             body={
                 <><div>
                     <ParagraphStyled>
