@@ -5,19 +5,11 @@ import TasksPage from './features/tasks/TasksPage';
 import TaskPage from './features/tasks/TaskPage';
 import { StyledNavLink } from './styled';
 import { toAuthor, toTask, toTasks } from './routes';
+import Navigation from './Navigation';
 
 const App = () => (
 	<HashRouter>
-		<nav>
-			<ul>
-				<li>
-					<StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
-				</li>
-				<li>
-					<StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
-				</li>
-			</ul>
-		</nav>
+		<Navigation />
 		<Switch>
 			<Route path={toTask()}>
 				<TaskPage />
