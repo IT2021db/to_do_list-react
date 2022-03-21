@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, Wrapper } from "./styled";
+import { Wrapper } from "./styled";
 import Input from "../../Input";
 import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
