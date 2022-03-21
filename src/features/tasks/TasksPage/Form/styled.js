@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
     display: grid;
@@ -11,15 +11,10 @@ export const StyledForm = styled.form`
         }
     `;
 
-export const Input = styled.input`
-    padding: 10px;
-    border: 1px solid ${({theme})=>theme.color.alto};
-`;
-
 export const Button = styled.button`
     padding: 10px;
-    background-color: ${({theme})=>theme.color.teal};;
-    color: ${({theme})=>theme.color.white};
+    background-color: ${({ theme }) => theme.color.teal};;
+    color: ${({ theme }) => theme.color.white};
     border: none;
     cursor: pointer;
 
@@ -34,6 +29,6 @@ export const Button = styled.button`
     }
 `;
 
-  
-    
-        
+
+
+
