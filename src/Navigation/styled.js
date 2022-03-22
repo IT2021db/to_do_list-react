@@ -3,7 +3,14 @@ import { NavLink } from "react-router-dom";
 
 export const StyledNavLink = styled(NavLink)`
     &.active{
-    color: red;
+    font-weight: bold;
+    }
+    text-decoration: none;
+    font-size: large;
+    color: ${({ theme }) => theme.color.white};
+
+    &:hover{
+       border-bottom: 1px solid;
     }
 `;
 
