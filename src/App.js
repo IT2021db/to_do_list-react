@@ -19,7 +19,7 @@ const App = () => (
 			<Route path={toAuthor()}>
 				<AuthorPage />
 			</Route>
-			<Route path={toTasks()}>
+			<Route>
 				<Redirect to={toTasks()} />
 			</Route>
 		</Switch>
