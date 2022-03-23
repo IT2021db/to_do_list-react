@@ -6,7 +6,7 @@ export const StyledNavLink = styled(NavLink)`
     font-weight: bold;
     }
     text-decoration: none;
-    font-size: large;
+    font-size: 20px;
     color: ${({ theme }) => theme.color.white};
 
     &:hover{
