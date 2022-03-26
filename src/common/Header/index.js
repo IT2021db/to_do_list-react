@@ -1,6 +1,4 @@
-import react from "react";
-
-const Header = ({ title }) => (
+export const Header = ({ title }) => (
         <header>
                 <h1>{title}</h1>
         </header>

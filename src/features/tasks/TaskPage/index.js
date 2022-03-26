@@ -24,7 +24,6 @@ function TaskPage() {
                         </ParagraphStyled>
                     </>
                 )}
-
             />
         </Container>
     );
