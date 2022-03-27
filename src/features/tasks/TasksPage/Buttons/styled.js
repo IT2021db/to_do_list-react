@@ -15,7 +15,8 @@ export const Buttons = styled.button`
   `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
-    text-align: center;
-    margin: 0;
+    display: flex;
+    margin: auto;
+    padding: 5px;
   }
 `;
